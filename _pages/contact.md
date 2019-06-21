@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Contact
+permlink: "/contact.html"
 ---
 <div class="container">
 

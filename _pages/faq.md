@@ -1,7 +1,6 @@
 ---
-layout: default
 title: FAQ
-permlink: /faq/
+permlink: "/faq.html"
 ---
 <div class="container">
 

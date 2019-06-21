@@ -1,7 +1,6 @@
 ---
 title: About
-permlink: /about/
-layout: default
+permlink: "/about.html"
 ---
 <div class="container">
 

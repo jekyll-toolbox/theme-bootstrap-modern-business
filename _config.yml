@@ -1,39 +1,44 @@
 # Site
-name: "jekyll-toolbox"
-description: "Jekyll-Toolbox is a free Jekyll theme based on Bootstrap4 and the modern business template"
-baseurl: "/"
+name: 'Jekyll Toolbox'
+description: 'Jekyll Toolbox Theme based on Bootstrap'
+baseurl: '/'
 
-#
-include: [ "_pages" ]
+include: ["_pages"]
 #permalink: /:title/
 
-# defaults
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+ 
+# Defaults
 defaults:
+
+  # all posts
   - scope:
       path: "_posts"
     values:
       layout: post
-
-  # _pages
+      
+  # all pages
   - scope:
-      path: ""
-      type: pages
+      path: "_pages"
     values:
-      layout: single
-      author_profile: true
+      layout: page
 
-# Plugins
-plugins: 
-  - jekyll-sitemap
-  - jekyll-paginate
-  
 # Syntax
 markdown: kramdown
 highlighter: rouge
 
-sass:
-    sass_dir: /assets/css
-    style:    compressed
+# Pagination
+paginate: 20
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+#
+sass:
+    sass_dir: /assets/css
+    style:    compressed

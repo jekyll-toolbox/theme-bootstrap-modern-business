@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Blog
+permlink: "/blog/home-1.html"
 ---
 <div class="container">
 

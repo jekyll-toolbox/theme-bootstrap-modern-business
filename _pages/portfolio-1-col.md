@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Portfolio
+permlink: "/portfolio/1-col.html"
 ---
 <div class="container">
 

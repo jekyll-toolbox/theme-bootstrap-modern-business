@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Pricing
+permlink: "/pricing.html"
 ---
 <div class="container">
 

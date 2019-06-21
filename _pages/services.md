@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Services
+title: "Services"
+permlink: "/services.html"
 ---
 <div class="container">
 

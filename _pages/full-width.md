@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Full width
+permlink: "/full_width.html"
 ---
 <div class="container">
 

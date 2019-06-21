@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Sidebar
+title: "Sidebar"
+permlink: "/sidebar.html"
 ---
 <div class="container">
 
