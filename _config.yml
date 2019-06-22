@@ -1,7 +1,7 @@
 # Site
 name: 'Jekyll Toolbox'
 description: 'Jekyll Toolbox Theme based on Bootstrap'
-baseurl: '/'
+baseurl: '/theme-bootstrap-modern-business'
 
 include: ["_pages"]
 #permalink: /:title/
