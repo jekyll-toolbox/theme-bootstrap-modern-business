@@ -1,7 +1,6 @@
 # Site
-name: 'Jekyll Toolbox'
+name: 'Jekyll Toolbox Theme on Github'
 description: 'Jekyll Toolbox Theme based on Bootstrap'
-url: 'localhost:4000'
 baseurl: '/theme-bootstrap-modern-business'
 
 include: ["_pages"]
