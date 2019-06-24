@@ -1,0 +1,46 @@
+{% assign images = site.url |  append:  '/' | append: site.baseurl | append: '/assets/img/portfolio' %}
+
+{% case page.numberofcols %}
+{% when 1 %}{% assign colclass = 'col-md-7' %}
+{% when 2 %}{% assign colclass = 'col-lg-6                  ' %}
+{% when 3 %}{% assign colclass = 'col-lg-4          col-sm-6' %}
+{% when 4 %}{% assign colclass = 'col-lg-3 col-md-4 col-sm-6' %}
+{% else   %}{% assign colclass = 'col-lg-3 col-md-4 col-sm-6' %}
+{% endcase %}
+
+<div class="row">
+    {% for item in site.portfolio %}
+
+    <!--
+        portfolio-1-col:          col-md-7
+        portfolio-2-col: col-lg-6                   portfolio-item
+        portfolio-3-col: col-lg-4          col-sm-6 portfolio-item
+        portfolio-4-col: col-lg-3 col-md-4 col-sm-6 portfolio-item"
+    -->
+    <div class="{{ colclass }} portfolio-item">
+        {% if page.numberofcols == 1 %}
+        <div class="col-md-7">
+            <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="{{ images }}/{{ item.img }}" alt=""></a>
+        </div>
+        <div class="col-md-5">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text | markdownify }}</p>
+            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        {% else   %}
+        <div class="card h-100">
+            <!--
+                portfolio-1-col: img-fluid rounded mb-3 mb-md-0
+                portfolio-X-xol: card-img-top
+            -->
+            <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="{{ images }}/{{ item.img }}" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title"><a href="#">{{ item.title }}</a></h4>
+                <p class="card-text">{{ item.text | markdownify }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

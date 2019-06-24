@@ -3,15 +3,7 @@ layout: page
 title: Services
 ---
 <div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Services
-        <small>Subheading</small>
-    </h1>
-
-    <!-- include component-breadcrumb.html -->
-    {% include component-breadcrumb.html %}
-
-    <!-- include component-services.html -->
-    {% include component-services.html %}
+    <h1 class="mt-4 mb-3">{{ page.title }}</h1>
+    {% include component/breadcrumb.html %}
+    {% include component/services.html %}
 </div>
