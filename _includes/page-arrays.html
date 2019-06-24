@@ -1,0 +1,13 @@
+<!-- INCLUDE: page-arrays.html -->
+<h3>Display arrays from: {{ page.title }}</h3>
+
+<b>Dispay Data</b>{{ page.data | jsonify }}<br>
+
+{% for items in page.data %}
+    <h3>items={{ items }}</h3>
+    {% for item in items %}
+        <li>item={{ item }}</li>
+    {% endfor %}
+{% endfor %}
+
+<!-- INCLUDE: page-arrays.html: DONE -->

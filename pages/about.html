@@ -1,0 +1,18 @@
+---
+layout: page
+title: About
+---
+{% assign pages = site.url |  append:  '/' | append: site.baseurl | append: '/portfolio' %}
+
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">{{ page.title }}<small>Subheading</small></h1>
+
+    {% include component-breadcrumb.html %}
+    {% include component-intro.html %}
+    {% include component-services.html %}
+    {% include component-teams.html %}
+    {% include component-customers.html %}
+    {% include component-portfolio.html %}    
+</div>

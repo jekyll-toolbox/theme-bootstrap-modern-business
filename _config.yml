@@ -1,14 +1,15 @@
 # Site
 name: 'Jekyll Toolbox'
 description: 'Jekyll Toolbox Theme based on Bootstrap'
-baseurl: '/'
+url: 'localhost:4000'
+baseurl: '/theme-bootstrap-modern-business'
 
 include: ["_pages"]
 #permalink: /:title/
 
 # Plugins
+#   - jekyll-feed
 plugins: 
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
@@ -27,6 +28,29 @@ defaults:
       path: "_pages"
     values:
       layout: page
+
+#
+collections_dir: collections
+collections:
+  teams:
+    title: "Teams"
+    output: true
+
+  pages:
+    title: "Pages"
+    output: true
+
+  customers:
+    title: "Customers"
+    output: true
+
+  services:
+    title: "Services"
+    output: true
+
+  portfolio:
+    title: "Portfolio"
+    output: true
 
 # Syntax
 markdown: kramdown

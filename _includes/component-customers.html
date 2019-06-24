@@ -1,0 +1,10 @@
+{% assign images = site.url |  append:  '/' | append: site.baseurl | append: '/assets/img/customers' %}
+
+<h2>Customers</h2>
+<div class="row">
+    {% for item in site.customers %}
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{{ images }}/{{ item.img }}" alt="">
+        </div>
+    {% endfor %}
+</div>

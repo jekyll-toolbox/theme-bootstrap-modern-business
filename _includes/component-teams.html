@@ -1,0 +1,27 @@
+{% assign images = site.url |  append:  '/' | append: site.baseurl | append: '/assets/img/teams' %}
+
+<h2>Teams: {{ site.teams.title }}</h2>
+
+<div class="row">
+        <div class="col-lg-3 mb-3">
+            {{ site.teams.title }}
+        </div>
+</div>
+
+<div class="row">
+    {% for item in site.teams %}
+    <div class="col-lg-3 mb-3">
+        <div class="card h-100 text-center">
+            <img class="card-img-top" src="{{ images }}/{{ item.img }}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{ item.title }}</h4>
+                <h6 class="card-subtitle mb-2 text-muted">{{ item.subtitle }}</h6>
+                <p class="card-text">{{ item.text | markdownify }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="#">{{ item.footer }}</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

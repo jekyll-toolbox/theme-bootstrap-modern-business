@@ -1,5 +1,9 @@
-<footer class="fixed-bottom py-5 bg-dark">
-    <div class="container">
+{% assign fixed = fixed-bottom %}
+{% assign fixed = %}
+
+<footer class="{{fixed}} py-5 bg-dark">
+        <footer class="fixed-bottom py-5 bg-dark">
+                <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; {{ site.time | date: '%Y' }}</p>
     </div>
 </footer>

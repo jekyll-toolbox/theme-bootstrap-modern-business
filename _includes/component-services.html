@@ -1,0 +1,22 @@
+{% assign images = site.url |  append:  '/' | append: site.baseurl | append: '/assets/img/services' %}
+
+<h2>Services: {{ site.services.title }}</h2>
+
+<!-- Image Header -->
+<img class="img-fluid rounded mb-4" src="{{ images }}/header.jpg" alt="">
+
+<div class="row">
+    {% for item in site.services %}
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">{{ item.title }}</h4>
+                <div class="card-body">
+                    <p class="card-text">{{ item.text | markdownify }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
